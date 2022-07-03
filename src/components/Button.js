@@ -1,7 +1,8 @@
 import React from "react";
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 
 const StyledButton = styled.button`
+  width: 150px;
   border: none;
   padding: 10px 15px;
   font-size: 18px;
@@ -9,6 +10,22 @@ const StyledButton = styled.button`
   &:focus {
     outline: none;
   }
+  align-self: ${(props) => props.self || "stretch"};
+
+  ${(props) =>
+    props.primary &&
+    css`
+      color: ${(props) => props.color || "white"};
+      background: ${(props) => props.background || "white"};
+    `}
+
+  ${(props) =>
+    props.outlined &&
+    css`
+      color: ${(props) => props.color || "white"};
+      border: 1px solid ${(props) => props.color || "white"};
+      background: transparent;
+    `}
 `;
 
 const Button = (props) => {

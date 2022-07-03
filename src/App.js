@@ -18,8 +18,12 @@ function App() {
       <Flex justify={"center"}>
         <Title color={"green"}>Console cmd 2022. AntonVoronezh</Title>
       </Flex>
-      <Console />
-      <Button />
+      <Flex direction={"column"}>
+        <Console />
+        <Button outlined color={"green"} self={"flex-end"}>
+          Отправить
+        </Button>
+      </Flex>
     </AppWrapper>
   );
 }
