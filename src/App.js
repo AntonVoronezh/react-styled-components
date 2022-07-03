@@ -1,5 +1,6 @@
 import "./App.css";
 import styled from "styled-components";
+import Title from "./components/Title";
 
 const AppWrapper = styled.div`
   width: 100%;
@@ -9,7 +10,11 @@ const AppWrapper = styled.div`
 `;
 
 function App() {
-  return <AppWrapper className="App">gggg</AppWrapper>;
+  return (
+    <AppWrapper>
+      <Title color={'red'}>7u5757</Title>
+    </AppWrapper>
+  );
 }
 
 export default App;
