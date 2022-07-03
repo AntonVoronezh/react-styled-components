@@ -2,12 +2,12 @@ import React from "react";
 import styled from "styled-components";
 
 const StyledConsole = styled.textarea`
-width: 100%;
+  width: 100%;
   height: 70vh;
   background: black;
   font-size: 24px;
   border: none;
-  color: ${(props) => props.color || "white"}
+  color: ${(props) => props.color || "white"};
   resize: none;
   &:focus {
     outline: none;
