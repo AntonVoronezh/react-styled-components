@@ -2,6 +2,7 @@ import "./App.css";
 import styled from "styled-components";
 import Title from "./components/Title";
 import Flex from "./components/Flex";
+import Console from "./components/Console";
 
 const AppWrapper = styled.div`
   width: 100%;
@@ -13,9 +14,10 @@ const AppWrapper = styled.div`
 function App() {
   return (
     <AppWrapper>
-      <Flex justify={'center'}>
+      <Flex justify={"center"}>
         <Title color={"green"}>Console cmd 2022. AntonVoronezh</Title>
       </Flex>
+      <Console />
     </AppWrapper>
   );
 }
