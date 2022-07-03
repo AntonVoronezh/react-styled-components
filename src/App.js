@@ -16,9 +16,9 @@ function App() {
   return (
     <AppWrapper>
       <Flex justify={"center"}>
-        <Title color={"green"}>Console cmd 2022. AntonVoronezh</Title>
+        <Title >Console cmd 2022. AntonVoronezh</Title>
       </Flex>
-      <Flex direction={"column"}>
+      <Flex direction={"column"} margin={"10px 0"}>
         <Console />
         <Button color={"green"} self={"flex-end"}>
           Отправить
