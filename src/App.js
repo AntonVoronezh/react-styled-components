@@ -20,7 +20,7 @@ function App() {
       </Flex>
       <Flex direction={"column"}>
         <Console />
-        <Button outlined color={"green"} self={"flex-end"}>
+        <Button color={"green"} self={"flex-end"}>
           Отправить
         </Button>
       </Flex>
